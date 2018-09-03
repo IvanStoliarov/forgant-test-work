@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challange</title>
+    <link rel="stylesheet" href="jquery.custom-select/jquery.custom-select.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="page-title">Select currency to exhange:</h1>
+            <select class="header__select" name="currency" id="currency">
+                <option value="usd" selected>USD</option>
+                <option value="eur">EUR</option>
+                <option value="rub">RUB</option>
+                <option value="gbr" disabled>GBP</option>
+            </select>
+        </header>
+
+        <main>
+            <ul class="crypto-currency__list">
+                <li class="crypto-currency ethereum">
+                    <div class="crypto-currency__mask"></div>
+                    <div class="crypto-currency__title">Ethereum</div>
+                    <div class="crypto-currency__image crypto-currency__image_ethereum">
+                        <div class="crypto-currency__shadow"></div>
+                    </div>
+                    <div class="data-block" id="eth">
+                        <div class="price">
+                            <div class="price__title">Price:</div>
+                            <div class="price__inner"><span class="price__value">22
+                                    526.92
+                                </span></div>
+                        </div>
+                        <div class="percent-toggler__container">
+                            <div class="percent-toggler__title">Percent change</div>
+                            <div class="percent-toggler">
+                                <div class="percent-toggler__rail">
+                                    <div class="percent-toggler__dragger"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-change">
+                            <div class="price-change__row">
+                                <div class="price-change__title">Hour change</div>
+                                <div class="price-change__value price-change-hour"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Day change</div>
+                                <div class="price-change__value price-change-day"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Week change</div>
+                                <div class="price-change__value price-change-week"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Month change</div>
+                                <div class="price-change__value price-change-month"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="crypto-currency litecoin">
+                    <div class="crypto-currency__mask"></div>
+                    <div class="crypto-currency__title">Litecoin</div>
+                    <div class="crypto-currency__image crypto-currency__image_litecoin">
+                        <div class="crypto-currency__shadow"></div>
+                    </div>
+                    <div class="data-block" id="ltc">
+                        <div class="price">
+                            <div class="price__title">Price:</div>
+                            <div class="price__inner"><span class="price__value">22
+                                    526.92
+                                </span></div>
+                        </div>
+                        <div class="percent-toggler__container">
+                            <div class="percent-toggler__title">Percent change</div>
+                            <div class="percent-toggler">
+                                <div class="percent-toggler__rail">
+                                    <div class="percent-toggler__dragger"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="price-change">
+                            <div class="price-change__row">
+                                <div class="price-change__title">Hour change</div>
+                                <div class="price-change__value price-change-hour"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Day change</div>
+                                <div class="price-change__value price-change-day"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Week change</div>
+                                <div class="price-change__value price-change-week"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Month change</div>
+                                <div class="price-change__value price-change-month"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="crypto-currency bitcoin">
+                    <div class="crypto-currency__mask"></div>
+                    <div class="crypto-currency__title">Bitcoin</div>
+                    <div class="crypto-currency__image crypto-currency__image_bitcoin">
+                        <div class="crypto-currency__shadow"></div>
+                    </div>
+                    <div class="data-block data-block_absolute" id="btc">
+                        <div class="price">
+                            <div class="price__title">Price:</div>
+                            <div class="price__inner"><span class="price__value">22
+                                    526.92
+                                </span></div>
+                        </div>
+                        <div class="percent-toggler__container">
+                            <div class="percent-toggler__title">Percent change</div>
+                            <div class="percent-toggler percent-toggler_is-off">
+                                <div class="percent-toggler__rail">
+                                    <div class="percent-toggler__dragger"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="price-change">
+                            <div class="price-change__row">
+                                <div class="price-change__title">Hour change</div>
+                                <div class="price-change__value price-change-hour"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Day change</div>
+                                <div class="price-change__value price-change-day"><span class="percent-value">-266%</span><span class="absolute-value">-26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Week change</div>
+                                <div class="price-change__value price-change-week"><span class="percent-value">266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                            <div class="price-change__row">
+                                <div class="price-change__title">Month change</div>
+                                <div class="price-change__value price-change-month"><span class="percent-value">+266%</span><span class="absolute-value">+26&#36;</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="jquery.custom-select/jquery.custom-select.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+@import "normalize";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700");
+
+body {
+  background-color: #1b232b;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 984px;
+  background: url(../img/page-bg.png) no-repeat;
+  padding: 70px 15px 0 15px;
+}
+
+header {
+  padding: 22px 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(146, 232, 254, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(252, 252, 252, 0.02);
+  }
+}
+
+.page-title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 60px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.header__select {
+  z-index: 1;
+  width: 295px;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px solid #92e8fe;
+  background: transparent;
+}
+
+.crypto-currency__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.crypto-currency {
+  position: relative;
+  flex: 1;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 20px 30px;
+  &:first-of-type {
+    margin-left: 0;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.ethereum {
+  background-color: #2d4934;
+  background-image: radial-gradient(circle 152px at 58% 38%, #ffffff 0%, #577a58 61%, #2d4934 100%);
+  img {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    z-index: 0;
+  }
+}
+
+.litecoin {
+  background-color: #333333;
+  background-image: radial-gradient(circle 180px at 50% 35%, #acacac, #333333);
+}
+
+.litecoin__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/litecoin-mask.png);
+  width: 100%;
+  height: 100%;
+}
+
+.bitcoin {
+  background-color: #2f1103;
+  background-image: radial-gradient(circle 180px at 50% 35%, #9f6627, #2f1103);
+}
+
+.crypto-currency__mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/mask16.png) top/cover;
+}
+
+.crypto-currency__title {
+  position: relative;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 59.01px;
+  text-align: center;
+  z-index: 1;
+}
+
+.crypto-currency__image {
+  height: 115px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.crypto-currency__image_ethereum {
+  background: url(../img/ethereum_img.png) no-repeat center;
+}
+
+.crypto-currency__image_litecoin {
+  background: url(../img/litecoin-img.png) no-repeat center;
+}
+
+.crypto-currency__image_bitcoin {
+  background: url(../img/bitcoin-img.png) no-repeat center;
+}
+
+.crypto-currency__shadow {
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background: url(../img/coin-shadow.png) center/contain no-repeat;
+}
+
+.data-block {
+  position: relative;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.price__title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.price__inner {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30.91px;
+}
+
+.percent-toggler__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.percent-toggler {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.percent-toggler__title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.percent-toggler__rail {
+  width: 42px;
+  height: 16px;
+  box-shadow: inset 1px 3px 7px rgba(27, 36, 40, 0.56);
+  border-radius: 8px;
+  background-color: #3eb5f1;
+  position: relative;
+  transition: background-color 400ms;
+}
+
+.percent-toggler__dragger {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: left 400ms;
+}
+
+.percent-toggler_is-off {
+  .percent-toggler__rail {
+    background-color: #c4c4c4;
+  }
+  .percent-toggler__dragger {
+    left: 18px;
+  }
+}
+
+.price-change__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.price-change__title {
+  opacity: 0.2;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.price-change__value {
+  color: #70c446;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.price-change__value_decrease {
+  color: #c80e24;
+}
+
+.absolute-value {
+  display: none;
+}
+
+.data-block_absolute {
+  .absolute-value {
+    display: inline;
+  }
+  .percent-value {
+    display: none;
+  }
+}
+
+// select styles
+
+.my-select {
+  position: relative;
+  z-index: 1;
+  width: 297px;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px solid #92e8fe;
+  &::after {
+    content: "";
+    top: 50%;
+    right: 15px;
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background: url(../img/select-icon.png);
+  }
+}
+
+.my-select__option {
+  width: 100%;
+  background: none;
+  height: 100%;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  text-align: left;
+  padding-left: 17px;
+  &:hover {
+    cursor: pointer;
+  }
+  outline: none;
+}
+
+.my-select__dropdown {
+  border-radius: 5px;
+  border: 1px solid #92e8fe;
+  background-color: #1e252b;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .my-select__option {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    &:hover {
+      color: #92e8fe;
+    }
+  }
+}
+
+@media (max-width: 992px)and(min-width: 576px) {
+  .crypto-currency{
+    padding: 20px 15px;
+  }
+  .price__value {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .crypto-currency__list {
+    flex-direction: column;
+  }
+
+  .crypto-currency {
+    margin: 16px 0;
+  }
+
+  .data-block {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .my-select {
+    max-width: 100%;
+  }
+}
